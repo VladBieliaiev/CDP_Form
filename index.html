@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div style="background-color: #019ef7">
+      <div
+        class="container-sm d-flex justify-content-center align-items-center vh-100"
+      >
+        <form
+          id="form"
+          class="d-flex flex-column p-4 rounded-4 justify-content-center shadow-lg bg-light signIn"
+          style="min-width: 22rem; min-height: 40rem"
+        >
+          <div class="my-5 d-flex flex-column align-items-start">
+            <button
+              type="button"
+              id="signInBtn"
+              class="btn btn-white text-primary fs-1 fw-bold p-0"
+              onclick="toggleForm('signUp','signIn')"
+            >
+              Sign in
+            </button>
+            <button
+              type="button"
+              id="signupBtn"
+              class="btn btn-white text-primary fs-1 fw-bold p-0"
+              onclick="toggleForm('signIn','signUp')"
+            >
+              Sign Up
+            </button>
+          </div>
+          <div class="mb-3 w-100">
+            <input
+              type="Email"
+              class="form-control rounded-4"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="password "
+              class="form-control rounded-4"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="password"
+              class="form-control rounded-4"
+              id="repeatPassword1"
+              placeholder="Verify Password"
+            />
+          </div>
+          <p class="text-end mb-4">
+            <a
+              href="#"
+              class="link-primary fw-bold link-offset-2 link-opacity-75 link-underline-opacity-0 link-underline-opacity-100-hover"
+              >Forgot Password</a
+            >
+          </p>
+          <button type="submit" class="btn btn-primary rounded-4 mb-5">
+            Submit
+          </button>
+          <p class="text-center mb-4">
+            <a
+              href="#"
+              class="link-primary fw-bold link-offset-2 link-opacity-75 link-underline-opacity-0 link-underline-opacity-100-hover"
+              >Privacy Policy</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

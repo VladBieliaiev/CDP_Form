@@ -1,0 +1,11 @@
+.signIn #signupBtn {
+  opacity: 0.5;
+}
+
+.signIn #repeatPassword1 {
+  display: none;
+}
+
+.signUp #signInBtn {
+  opacity: 0.5;
+}
