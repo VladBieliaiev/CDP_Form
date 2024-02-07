@@ -27,7 +27,7 @@
               type="button"
               id="signInBtn"
               class="btn btn-white text-primary fs-1 fw-bold p-0"
-              onclick="toggleForm('signUp','signIn')"
+              onclick="toggleForm('signUp','signIn', 'Sign in')"
             >
               Sign in
             </button>
@@ -35,7 +35,7 @@
               type="button"
               id="signupBtn"
               class="btn btn-white text-primary fs-1 fw-bold p-0"
-              onclick="toggleForm('signIn','signUp')"
+              onclick="toggleForm('signIn','signUp', 'Sign Up')"
             >
               Sign Up
             </button>
@@ -65,17 +65,21 @@
               placeholder="Verify Password"
             />
           </div>
-          <p class="text-end mb-4">
+          <p class="text-end mb-4 fs-6">
             <a
               href="#"
               class="link-primary fw-bold link-offset-2 link-opacity-75 link-underline-opacity-0 link-underline-opacity-100-hover"
               >Forgot Password</a
             >
           </p>
-          <button type="submit" class="btn btn-primary rounded-4 mb-5">
-            Submit
+          <button
+            type="submit"
+            id="submitBtn"
+            class="btn btn-primary rounded-4 my-5"
+          >
+            Sign in
           </button>
-          <p class="text-center mb-4">
+          <p class="text-center mb-4 fs-6">
             <a
               href="#"
               class="link-primary fw-bold link-offset-2 link-opacity-75 link-underline-opacity-0 link-underline-opacity-100-hover"
