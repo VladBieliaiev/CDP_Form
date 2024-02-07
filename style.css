@@ -2,7 +2,7 @@
   opacity: 0.5;
 }
 
-.signIn #repeatPassword1 {
+.signIn #password2 {
   display: none;
 }
 

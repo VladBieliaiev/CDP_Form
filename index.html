@@ -20,14 +20,14 @@
         <form
           id="form"
           class="d-flex flex-column p-4 rounded-4 justify-content-center shadow-lg bg-light signIn"
-          style="min-width: 22rem; min-height: 40rem"
+          style="min-width: 22rem; min-height: 42rem"
         >
           <div class="my-5 d-flex flex-column align-items-start">
             <button
               type="button"
               id="signInBtn"
               class="btn btn-white text-primary fs-1 fw-bold p-0"
-              onclick="toggleForm('signUp','signIn')"
+              onclick="toggleForm('signUp','signIn', 'Sign in')"
             >
               Sign in
             </button>
@@ -35,47 +35,66 @@
               type="button"
               id="signupBtn"
               class="btn btn-white text-primary fs-1 fw-bold p-0"
-              onclick="toggleForm('signIn','signUp')"
+              onclick="toggleForm('signIn','signUp', 'Sign Up')"
             >
               Sign Up
             </button>
           </div>
-          <div class="mb-3 w-100">
+          <div class="mt-3 w-100">
             <input
               type="Email"
               class="form-control rounded-4"
-              id="exampleInputEmail1"
+              id="email"
               aria-describedby="emailHelp"
               placeholder="Enter email"
             />
+            <div
+              id="error"
+              class="text-danger ms-2 text-start"
+              style="font-size: 0.8rem"
+            ></div>
           </div>
-          <div class="mb-3">
-            <input
-              type="password "
-              class="form-control rounded-4"
-              id="exampleInputPassword1"
-              placeholder="Password"
-            />
-          </div>
-          <div class="mb-3">
+          <div class="mt-3">
             <input
               type="password"
               class="form-control rounded-4"
-              id="repeatPassword1"
+              id="password1"
+              placeholder="Password"
+            />
+            <div
+              id="error"
+              class="d-none text-danger ms-2 text-start"
+              style="font-size: 0.8rem"
+            ></div>
+          </div>
+          <div class="mt-3">
+            <input
+              type="password"
+              class="form-control rounded-4"
+              id="password2"
               placeholder="Verify Password"
             />
+            <div
+              id="error"
+              class="d-none text-danger ms-2 text-start"
+              style="font-size: 0.8rem"
+            ></div>
           </div>
-          <p class="text-end mb-4">
+          <p class="text-end mb-4 fs-6">
             <a
               href="#"
               class="link-primary fw-bold link-offset-2 link-opacity-75 link-underline-opacity-0 link-underline-opacity-100-hover"
               >Forgot Password</a
             >
           </p>
-          <button type="submit" class="btn btn-primary rounded-4 mb-5">
-            Submit
+          <button
+            type="submit"
+            id="submitBtn"
+            class="btn btn-primary rounded-4 my-5"
+          >
+            Sign in
           </button>
-          <p class="text-center mb-4">
+          <p class="text-center mb-4 fs-6">
             <a
               href="#"
               class="link-primary fw-bold link-offset-2 link-opacity-75 link-underline-opacity-0 link-underline-opacity-100-hover"
@@ -90,6 +109,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="js/toggleLayout.js"></script>
+    <script src="js/validation.js"></script>
   </body>
 </html>
