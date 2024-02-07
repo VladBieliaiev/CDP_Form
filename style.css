@@ -9,3 +9,7 @@
 .signUp #signInBtn {
   opacity: 0.5;
 }
+
+.signUp #forgotPass {
+  display: none;
+}
